@@ -1,0 +1,133 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="homecs.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="nav">
+        <h3>Lawrence Shop</h3>
+        <div id="links">
+            <a href="index.html">Home</a>
+            <a href="#product">Product</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <button id=searchbar>
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 50 50">
+                <path
+                    d="M 21 3 C 11.621094 3 4 10.621094 4 20 C 4 29.378906 11.621094 37 21 37 C 24.710938 37 28.140625 35.804688 30.9375 33.78125 L 44.09375 46.90625 L 46.90625 44.09375 L 33.90625 31.0625 C 36.460938 28.085938 38 24.222656 38 20 C 38 10.621094 30.378906 3 21 3 Z M 21 5 C 29.296875 5 36 11.703125 36 20 C 36 28.296875 29.296875 35 21 35 C 12.703125 35 6 28.296875 6 20 C 6 11.703125 12.703125 5 21 5 Z">
+                </path>
+            </svg>
+        </button>
+      
+        <button class = "bag"><i class="ti ti-shopping-bag"></i></button>
+    </div>
+    <div id="search">
+        <input id = "type-box" type =  "text" placeholder = "Search Here"/>
+        <button id = "xButton"><i class="ti ti-x"></i></button>
+    </div>
+    
+
+    <div class="home_body">
+        <img src="2bg home.webp" alt="Home banner">
+        <div class="home_text">
+            <h1>Objects<br>worth<br>keeping.</h1>
+            <p>Apparel, homeware, and fragrance made slowly,<br> in small quantities, by people who give a damn.</p>
+        </div>
+
+    </div>
+    <div id="product">
+        <h1>Products</h1>
+
+        <div class="product-grid">
+
+            <div class="product-card">
+                <div class="img-wrap">
+                <img src="overshirt.webp" alt="Linen Overshirt">
+                <button class="add-bag">Add to Bag</button>
+                </div>
+                <p class="category">APPAREL</p>
+                <div class="product-info">
+                    <h2>Linen Overshirt</h2>
+                    <span>$148</span>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="img-wrap">
+                <img src="https://images.unsplash.com/photo-1605117012605-b68dedd4accc?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA="
+                    alt="Ceramic Pour-Over Set">
+                <button class="add-bag">Add to Bag</button>
+                </div>
+                <p class="category">HOMEWARE</p>
+                <div class="product-info">
+                    <h2>Ceramic Pour-Over Set</h2>
+                    <span>$94</span>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="img-wrap">
+                <img src="https://images.unsplash.com/photo-1622618991746-fe6004db3a47?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyZnVtZSUyMGJvdHRsZXN8ZW58MHx8MHx8fDA%3D"
+                    alt="No. 7 Eau de Parfum">
+                <button class="add-bag">Add to Bag</button>
+                </div>
+                <p class="category">FRAGRANCE</p>
+                <div class="product-info">
+                    <h2>No. 7 Eau de Parfum</h2>
+                    <span>$220</span>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="img-wrap">
+                <img src="https://images.unsplash.com/photo-1745284504942-2eb53650360a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtaW5pbWFsaXN0JTIwbHV4dXJ5JTIwZmFzaGlvbnxlbnwxfHx8fDE3Njc3MjU5NDJ8MA&ixlib=rb-4.1.0&q=80&w=1080"
+                    alt="Straw Market Tote">
+                <button class="add-bag">Add to Bag</button>
+                </div>
+                <p class="category">ACCESSORIES</p>
+                <div class="product-info">
+                    <h2>Straw Market Tote</h2>
+                    <span>$76</span>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="img-wrap">
+                <img
+                    src="https://images.unsplash.com/photo-1631125915902-d8abe9225ff2?w=600&h=750&fit=crop&auto=format" />
+                <button class="add-bag">Add to Bag</button>
+                </div>
+                <p class="category">HOMEWARE</p>
+                <div class="product-info">
+                    <h2>Clay Vessel Trio</h2>
+                    <span>$165</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>

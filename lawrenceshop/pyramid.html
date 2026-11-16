@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pyramid</title>
+</head>
+<body>
+
+   
+
+    <label for="height">Enter pyramid row:</label>
+    <input type="text" id="height">
+
+    <button id="generateBtn">Generate Pyramid</button>
+
+    <pre id="pyramid"></pre>
+
+    <script>
+        const heightInput = document.getElementById("height");
+        const generateButton = document.getElementById("generateBtn");
+        const pyramidOutput = document.getElementById("pyramid");
+
+        generateButton.addEventListener("click", function () {
+
+            const height = Number(heightInput.value);
+
+            if (!Number.isInteger(height) || height <= 0) {
+                pyramidOutput.textContent = "Please enter a positive integer.";
+                return;
+            }
+
+            let pyramid = "";
+
+            for (let row = 1; row <= height; row++) {
+
+                let line = "";
+
+                for (let space = 1; space <= height - row; space++) {
+                    line += " ";
+                }
+
+                for (let star = 1; star <= (2 * row - 1); star++) {
+                    line += "*";
+                }
+
+                pyramid += line + "\n";
+            }
+
+            pyramidOutput.textContent = pyramid;
+        });
+    </script>
+</body>
+</html>
+

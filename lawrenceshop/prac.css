@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+}
+
+#container {
+    display: flex;
+    justify-content: space-around;
+    gap: 12rem;
+    margin: 25px;
+}
+
+#container h3 {
+    font-family: "Bodoni Moda", serif;
+    font-weight: bolder;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+#link_text {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 3rem;
+}
+
+#welcome img {
+    width: 100vw;
+    height: 80vh;
+    position: relative;
+    filter:brightness(55%);
+}
+
+#link_text a {
+    font-size: clamp(0.75rem, 1.5vw, 1rem);
+    text-decoration: none;
+    font-family: "Inter", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+#searchBtn {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    margin: 0;
+}
+
+
+/* SEARCH BAR */
+
+#searchBar {
+    display: none;
+    align-items: center;
+    gap: 15px;
+
+    width: 100%;
+    height: 55px;
+    box-sizing: border-box;
+
+    padding: 0 25px;
+
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+#searchBar input {
+    flex: 1;
+
+    border: none;
+    outline: none;
+    background: none;
+
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+}
+
+#searchBar span {
+    font-family: "Inter", sans-serif;
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+#welcome h1{
+    color: #ffffff;
+     font-size: clamp(2rem, 5vw, 5rem);
+     position: absolute;
+     top: 20%;
+     left:20%;
+}
+
+#closeBtn{
+    color: #000000;
+    background-color: rgb(255, 253, 253);
+    border: none;
+    padding: 5px;
+    font-size: large;
+}
+
+#welcome p{
+    text-align: justify;
+}
